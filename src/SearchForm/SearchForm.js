@@ -27,7 +27,7 @@ class SearchForm extends React.Component {
 
   render () {
     return (
-      <form onSubmit={(e) => { this.handleFormSubmit(e) }}>
+      <form id="search-form" onSubmit={(e) => { this.handleFormSubmit(e) }}>
         <label htmlFor="search-term">Search Term</label>
         <input id="search-term" type="text"></input>
         <button>Search</button>
