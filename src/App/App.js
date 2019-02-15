@@ -41,8 +41,7 @@ class App extends React.Component {
           onData={(data) => { this.setData(data) }}
           onError={(err) => { this.setError(err) }}
         />
-        {/* <SearchErrorMessage error={this.state.error} /> */}
-        <SearchErrorMessage error={new Error('hi there')} />
+        <SearchErrorMessage error={this.state.error} />
         <SearchResultsList results={this.state.data} />
       </main>
     );
