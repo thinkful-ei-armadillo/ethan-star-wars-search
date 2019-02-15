@@ -15,6 +15,8 @@ class SearchForm extends React.Component {
       return;
     }
 
+    this.props.onLoading();
+
     search
       .searchPeople(term)
       .then((data) => {
