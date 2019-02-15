@@ -1,5 +1,4 @@
 import React from 'react';
-import search from '../search';
 import SearchForm from '../SearchForm/SearchForm';
 import SearchErrorMessage from '../SearchErrorMessage/SearchErrorMessage';
 import SearchResultsList from '../SearchResultsList/SearchResultsList';
@@ -27,13 +26,6 @@ class App extends React.Component {
   };
 
   render() {
-
-    search.searchFilms('the').then((data) => { console.log(data) });
-    search.searchPeople('skywalker').then((data) => { console.log(data) });
-    search.searchStarships('falcon').then((data) => { console.log(data) });
-    search.searchVehicles('speeder').then((data) => { console.log(data) });
-    search.searchSpecies('wookie').then((data) => { console.log(data) });
-    search.searchPlanets('tatooine').then((data) => { console.log(data) });
 
     return (
       <main id="site-container">
