@@ -9,7 +9,7 @@ const searchPeople = function (searchTerm) {
   return fetch(`${BASE_URL}people/?search=${searchTerm}`)
     .then((res) => {
       if (!res.ok) {
-        throw new Error('IOU one descriptive error message');
+        throw new Error('Error connecting to database');
       }
 
       return res.json();
@@ -25,7 +25,7 @@ const searchFilms = function (searchTerm) {
   return fetch(`${BASE_URL}films/?search=${searchTerm}`)
     .then((res) => {
       if (!res.ok) {
-        throw new Error('IOU one descriptive error message');
+        throw new Error('Error connecting to database');
       }
 
       return res.json();
@@ -41,7 +41,7 @@ const searchStarships = function (searchTerm) {
   return fetch(`${BASE_URL}starships/?search=${searchTerm}`)
     .then((res) => {
       if (!res.ok) {
-        throw new Error('IOU one descriptive error message');
+        throw new Error('Error connecting to database');
       }
 
       return res.json();
@@ -57,7 +57,7 @@ const searchVehicles = function (searchTerm) {
   return fetch(`${BASE_URL}vehicles/?search=${searchTerm}`)
     .then((res) => {
       if (!res.ok) {
-        throw new Error('IOU one descriptive error message');
+        throw new Error('Error connecting to database');
       }
 
       return res.json();
@@ -73,7 +73,7 @@ const searchSpecies = function (searchTerm) {
   return fetch(`${BASE_URL}species/?search=${searchTerm}`)
     .then((res) => {
       if (!res.ok) {
-        throw new Error('IOU one descriptive error message');
+        throw new Error('Error connecting to database');
       }
 
       return res.json();
@@ -89,7 +89,7 @@ const searchPlanets = function (searchTerm) {
   return fetch(`${BASE_URL}planets/?search=${searchTerm}`)
     .then((res) => {
       if (!res.ok) {
-        throw new Error('IOU one descriptive error message');
+        throw new Error('Error connecting to database');
       }
 
       return res.json();
