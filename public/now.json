@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "star-wars-search",
+  "alias":"thebinarypenguin-star-wars-search",
+  "routes": [
+      {
+        "src": "^/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": ".*",
+        "dest": "/index.html"
+      }
+  ]
+}
