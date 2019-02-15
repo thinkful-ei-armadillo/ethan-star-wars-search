@@ -30,7 +30,7 @@ class SearchForm extends React.Component {
   render () {
     return (
       <form id="search-form" onSubmit={(e) => { this.handleFormSubmit(e) }}>
-        <label htmlFor="search-term">Search Term</label>
+        <label htmlFor="search-term">Character Name</label>
         <input id="search-term" type="text"></input>
         <button>Search</button>
       </form>

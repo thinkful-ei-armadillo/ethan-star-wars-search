@@ -40,16 +40,23 @@ class App extends React.Component {
   render() {
 
     return (
-      <main id="site-container">
-        <SearchForm
-          onLoading={() => { this.setLoading() }}
-          onData={(data) => { this.setData(data) }}
-          onError={(err) => { this.setError(err) }}
-        />
-        <SearchErrorMessage error={this.state.error} />
-        <SearchLoadingMessage loading={this.state.loading} />
-        <SearchResultsList results={this.state.data} />
-      </main>
+      <>
+        <header>
+          <h1>Star Wars Character Search</h1>
+        </header>
+        <main id="site-container">
+          <div id="site-content">
+            <SearchForm
+              onLoading={() => { this.setLoading() }}
+              onData={(data) => { this.setData(data) }}
+              onError={(err) => { this.setError(err) }}
+            />
+            <SearchErrorMessage error={this.state.error} />
+            <SearchLoadingMessage loading={this.state.loading} />
+            <SearchResultsList results={this.state.data} />
+          </div>
+        </main>
+      </>
     );
   }
 }

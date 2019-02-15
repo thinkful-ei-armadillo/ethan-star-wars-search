@@ -1,5 +1,22 @@
 #site-container {
   width: 768px;
   margin: auto;
-  border: 1px solid black;
+  background-color: #ffd54e;
+  border-radius: 13px ;
+  padding:5px;
+  margin-bottom: 2rem;
+}
+
+#site-content {
+  background-color: #000000;
+  border-radius: 10px;
+  width: 100%;
+  color: #ffffff;
+  padding-bottom: 1px;
+}
+
+h1 {
+  text-align:center;
+  margin-top:2rem;
+  margin-bottom: 2rem;
 }
