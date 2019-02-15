@@ -9,7 +9,7 @@ function SearchErrorMessage (props) {
   }
 
   return (
-    <div className="error-message">{props.error.message}</div>
+    <div id="error-message">{props.error.message}</div>
   );
 }
 
