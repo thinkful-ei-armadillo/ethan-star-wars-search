@@ -1,5 +1,5 @@
 #site-container {
-  width: 768px;
+  max-width: 768px;
   margin: auto;
   background-color: #ffd54e;
   border-radius: 13px ;
