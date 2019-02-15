@@ -13,8 +13,6 @@ function SearchErrorMessage (props) {
   );
 }
 
-export default SearchErrorMessage;
-
 SearchErrorMessage.defaultProps = {
   error: null,
 };
@@ -22,3 +20,5 @@ SearchErrorMessage.defaultProps = {
 SearchErrorMessage.propTypes = {
   error: PropTypes.instanceOf(Error),
 };
+
+export default SearchErrorMessage;
