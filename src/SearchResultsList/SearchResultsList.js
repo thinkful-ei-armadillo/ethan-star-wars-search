@@ -4,7 +4,10 @@ import './SearchResultsList.css';
 
 function SearchResultsList (props) {
 
+  console.log('People Results', props.results.people);
+
   return (
+
     <p>IOU one search results list</p>
   );
 }
