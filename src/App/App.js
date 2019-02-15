@@ -15,7 +15,9 @@ class App extends React.Component {
 
   setLoading = () => {
     this.setState({
-      loading : true
+      loading : true,
+      data    : {},
+      error   : null,
     });
   }
 

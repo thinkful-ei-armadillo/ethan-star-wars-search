@@ -39,13 +39,15 @@ class SearchForm extends React.Component {
 }
 
 SearchForm.defaultProps = {
-  onData: () => {},
-  onError: () => {},
+  onLoading : () => {},
+  onData    : () => {},
+  onError   : () => {},
 };
 
 SearchForm.propTypes = {
-  onData: PropTypes.func,
-  onError: PropTypes.func,
+  onLoading : PropTypes.func,
+  onData    : PropTypes.func,
+  onError   : PropTypes.func,
 };
 
 export default SearchForm;
